@@ -1,2 +1,2 @@
-# portifolio
-Irei realizando modificações conforme o meu apredizado.
+# Portifólio
+Irei realizando modificações conforme o meu aprendizado.
