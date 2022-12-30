@@ -485,7 +485,7 @@ dialog .close a{
         transform: scale(2);
         padding: 0;
         margin: auto;
-        margin-top: -480px;
+        margin-top: -468px;
         animation: backgroundTransition 6s ease-in-out infinite;
     }
 
