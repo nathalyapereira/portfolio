@@ -17,32 +17,29 @@
         <header class="header-wrapper">
             
             <div class="header">
-                <div class="checkbox-container">
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="toggle">
-                        <label class="checkbox" for="toggle">
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                        </label>
-                        <div class="menu"></div>
+                        <div class="menu">
                             <nav class="menu-items">
-                                <ul>
+                                <a href="#" id="home" class="nav-branding"></a>
+                                <ul class="nav-menu">
                                     <li>
-                                        <a href="#">Home</a>
+                                        <a href="#home" class="nav-link">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Sobre</a>
+                                        <a href="#about" class="nav-link">Sobre</a>
                                     </li>
                                     <li>
-                                        <a href="#">Projetos</a>
+                                        <a href="#myProjects" class="nav-link">Projetos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#mySkills" class="nav-link">Habilidades</a>
+                                    </li>
+                                    <li>
+                                        <a href="#surprise" class="nav-link">💜</a>
                                     </li>
                                 </ul>
                             </nav>
-                        
+                        </div>
                     </div>
-                </div>
-            </div>
          <div class="border">   
         <div class="social-media-content">
             <h1>Olá, eu sou Nathalya</b></h1>
@@ -57,113 +54,128 @@
         </header>
     
         <main class="container">
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-wrapper">
-                    <h2>Sobre mim</h2>
-                    <p>Veja meus projetos futuros!</p>
-                    </div>
-                </div>
-                <div class="card-text">
-                    Tenho 23 anos, sou desenvolvedora front-end e estudante 
-                    de Análise e Desenvolvimento de Sistemas. Graduada em marketing 
-                    estou migrando de área, ainda não possuo experiência profissional, 
-                    no entanto busco sempre cursos e bootcamps.
-                    
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-wrapper">
-                    <h2>Projetos</h2>
-                    <p>Veja meus projetos futuros!</p>
-                    </div>
-                </div>
-                <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore iusto tenetur natus culpa nesciunt reprehenderit sapiente quaerat beatae. Quasi sunt quod consequuntur omnis harum molestiae nobis dolorem et ea?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore iusto tenetur natus culpa nesciunt reprehenderit sapiente quaerat beatae. Quasi sunt quod consequuntur omnis harum molestiae nobis dolorem et ea?
-                    <br><br>
-                    <div class="modal-wrapper">
-                        <a href="#">Veja agora!</a>
-                    </div>
-                    <dialog>
-                        <div class="close tooltip">
-                          <a href="#" alt="Fechar">&times;</a>
-                          <span class="tooltiptext">Fechar</span>
+            <section id="about">
+                <div class="card-container">
+                    <div class="card card-about">
+                        <div class="card-wrapper">
+                        <h2>Sobre mim</h2>
+                        <p>Veja meus projetos futuros!</p>
                         </div>
+                    </div>
+                    <div class="card-text">
+                        Tenho 23 anos, sou desenvolvedora front-end e estudante 
+                        de Análise e Desenvolvimento de Sistemas. Graduada em marketing 
+                        estou migrando de área, ainda não possuo experiência profissional, 
+                        no entanto busco sempre cursos e bootcamps.
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="myProjects">
+                <div class="card-container">
+                    <div class="card card-projects">
+                        <div class="card-wrapper">
+                        <h2>Projetos</h2>
+                        <p>Veja meus projetos futuros!</p>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        Aqui você encontra todos projetos que realizei.
+                        <br>
+                        Clique para ver as páginas .
+                        <br><br>
+                        <div class="modal-wrapper">
+                            <a href="#">Veja agora!</a>
+                        </div>
+                        <br>
+                        Ou 
+                        <br>
+                        Saiba mais sobre meus projetos pelo <a href="https://github.com/nathalyapereira">GitHub</a> visualizando os meus repositórios.
+                    </div>
+                </div>   
+            </section>
+                        
+                        <dialog>
+                            <div class="close tooltip">
+                            <a href="#" alt="Fechar">&times;</a>
+                            <span class="tooltiptext">Fechar</span>
+                            </div>
 
-                          <h2>💜 Projetos 💜</h2>
-                          <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          </p>
-                          
-                            <div class="projects">
-                                <div class="projects-container">
-                                    <a href="https://pokedex-sepia-kappa.vercel.app/">
-                                    <p>Pokedex</p>
-                                    <img src="./assets/img/pokedex.png" alt="Pokedex">
-                                </a>
-                                </div>
-                                <div class="projects-container">
-                                    <a href="https://calculadora-lilac-five.vercel.app/">
-                                    <p>Calculadora</p>
-                                    <img src="./assets/img/calculadora.png" alt="Calculadora">
+                            <h2>💜 Projetos 💜</h2>
+                            
+                                <div class="projects">
+                                    <div class="projects-container">
+                                        <a href="https://pokedex-sepia-kappa.vercel.app/">
+                                        <p>Pokedex</p>
+                                        <img src="./assets/img/pokedex.png" alt="Pokedex">
                                     </a>
+                                    </div>
+                                    <div class="projects-container">
+                                        <a href="https://calculadora-lilac-five.vercel.app/">
+                                        <p>Calculadora</p>
+                                        <img src="./assets/img/calculadora.png" alt="Calculadora">
+                                        </a>
+                                    </div>
+                                    <div class="projects-container">
+                                        <a href="#">
+                                        <p>Em breve!</p>
+                                        <img src="./assets/img/emBreve.png" alt="Em breve!">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="projects-container">
-                                    <a href="#">
-                                    <p>Em breve!</p>
-                                    <img src="./assets/img/emBreve.png" alt="Em breve!">
-                                    </a>
+                            
+                            
+                        </dialog>
+                        
+                        
+            <section id="mySkills">
+                    <div class="card-container ">
+                        <div class="card card-skills">
+                            <div class="card-wrapper">
+                                <h2>Habilidades</h2>
+                                <p>Acompanhe minha carreira!</p>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <div class="skills">
+                                <div class="skills-container">
+                                    <p>HTML</p>
+                                    <img src="./assets/img/HTML.png" alt="HTML">
+                                </div>
+                                <div class="skills-container">
+                                    <p>CSS</p>
+                                    <img src="./assets/img/CSS.png" alt="CSS">
+                                </div>
+                                <div class="skills-container">
+                                    <p>JavaScript</p>
+                                    <img src="./assets/img/JavaScript.png" alt="JavaScript">
                                 </div>
                             </div>
+                        </div>
+                    </div>  
+            </section>
+
+            <section id="surprise">
+                    <div class="card-container">
+                        <div class="card card-surprise">
+                            <div class="card-wrapper">
+                            <h2>Curiosidades</h2>
+                            <p>Ou mais do meu dia-a-dia :) menor que três </p>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            Eu já contei que eu gosto de criar?
+                            <br>
+                            Simplesmente, porque o sentimento é surreal.
+                            <br>
+                            Como foi no processo desse portfólio e também no desenho da home.
+                        </div>
                         
-                          
-                      </dialog>
-                    
-                    <br><br>
-                    Saiba mais sobre meus projetos no <a href="#">GitHub</a>
-                </div>
-            </div>
+                    </div>  
+            </section>
+            
 
-            <div class="card-container ">
-                <div class="card">
-                    <div class="card-wrapper">
-                        <h2>Habilidades</h2>
-                        <p>Acompanhe minha carreira!</p>
-                    </div>
-                </div>
-                <div class="card-text">
-                    <div class="skills">
-                        <div class="skills-container">
-                            <p>HTML</p>
-                            <img src="./assets/img/HTML.png" alt="HTML">
-                        </div>
-                        <div class="skills-container">
-                            <p>CSS</p>
-                            <img src="./assets/img/CSS.png" alt="CSS">
-                        </div>
-                        <div class="skills-container">
-                            <p>JavaScript</p>
-                            <img src="./assets/img/JavaScript.png" alt="JavaScript">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-wrapper">
-                    <h2>Instagram</h2>
-                    <p>Ou mais do meu dia-a-dia :) menor que três </p>
-                    </div>
-                </div>
-                <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore iusto tenetur natus culpa nesciunt reprehenderit sapiente quaerat beatae. Quasi sunt quod consequuntur omnis harum molestiae nobis dolorem et ea?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore iusto tenetur natus culpa nesciunt reprehenderit sapiente quaerat beatae. Quasi sunt quod consequuntur omnis harum molestiae nobis dolorem et ea?
-                </div>
-                
-            </div>
+           
         </main>
 
         <footer class="footer">
@@ -171,10 +183,9 @@
             <h4>E-mail para contato: nathalyperreira741@gmail.com</h4>
             <h4 class="separete">|</h4>
             <h4>Feito por Nathalya Pereira</h4>
-            <h4 class="separete">|</h4>
-            <h4>Fonte das Imagens</h4>
-            </div>
         </footer>
+        
+        <!-- JavaScript-->
         <script src="main.js"></script>
     </body>
 </html>
