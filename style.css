@@ -486,7 +486,7 @@ dialog .close a{
 	padding: 0;
 	margin: auto;
 	margin-top: -393px;
-	animation: backgroundTransition 0 ease-in-out infinite;
+	animation: none;
     }
 
     .social-media-content {
