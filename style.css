@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-/* #4ffa76 */
-
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -12,23 +10,29 @@ body {
     margin: 0;
     color: #ffffff;
     font-family: 'Jost', sans-serif;
+    position: relative;
 }
 
 /*HEADER*/
+
+header {
+   position: fixed; 
+   top: 0;
+   width: 100%;
+}
 
 .header-wrapper {
     height: 100vh;
     background-color:#4A1942;
     background-size: 400% 400%;
-    padding: 6.9rem;
+    padding: 5.6rem;
     position: relative;
     
 }
 
 .background-wrapper  {
-    height: 100vh;
+    height: 80vh;
     background-color: transparent;
-    background-size: 400% 400%;
     background-image: url(./assets/img/ilustracao_nathalya.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -36,11 +40,10 @@ body {
     align-items: flex-start;
     justify-content: center;
     margin-left: 50%;
-    margin-top: -40%;
+    margin-top: -32%;
     padding: 0 16rem 0 16rem;
     position: relative;
-    animation: backgroundTransition 3s ease-in-out infinite;
-
+    animation: backgroundTransition 4s ease-in-out infinite;
 }
 
 
@@ -99,92 +102,50 @@ h2 {
     }
 }
 
-/* MENU */
-
-.checkbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.checkbox {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out 0s;
-}
-
-.checkbox .trace {
-    width: 50px;
-    height: 2px;
-    background-color: #ffffff;
-    position: absolute;
-    border-radius: 4px;
-    transition: 0.5s ease-in-out;
-}
-
-.checkbox .trace:nth-child(1) {
-    top: 26px;
-    transform: rotate(0);
-}
-.checkbox .trace:nth-child(2) {
-    top: 46px;
-    transform: rotate(0);
-}
-.checkbox .trace:nth-child(3) {
-    top: 66px;
-    transform: rotate(0);
-}
-
-#toggle {
-    display: none;
-}
 
 /* MENU */
 
 .menu {
-    position: absolute;
-    top: 28px;
-    right: 30px;
-    background-color: transparent;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #4ffa76;
-    z-index: -1;
-    transition: 400ms ease-in-out 0s;
+    width: 100%;
+    margin: auto;
 }
 
 .menu-items {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    margin: auto;
+    min-height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: 400ms ease-in-out 0s;
+    padding: 0 0 1rem;
 }
 
 .menu-items ul {
     list-style-type: none;
+    padding: 0;
 }
 
-.menu-items ul li {
-    margin: 10px 0;
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 60px;
+}
 
+.nav-branding {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1.5rem;
+    background-image: url('./assets/img/logo.png');
+}
+
+.card-about, .card-skills, .card-projects,.card-surprise {
+    height: 720px;
+    margin-top: 0;
+    border: 1px solid black;
+}
+
+.nav-links {
+    background-color: #947de7;
 }
 
 .menu-items ul li a {
@@ -193,54 +154,20 @@ h2 {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
-}
-
-/* ANIMAÇÃO DO MENU */
-
-#toggle:checked + .checkbox .trace:nth-child(1){
-    transform: rotate(45deg);
-    top: 47px;
-}
-
-#toggle:checked + .checkbox .trace:nth-child(2){
-    transform: translate(-100px);
-    width: 30px;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#toggle:checked + .checkbox .trace:nth-child(3){
-    transform: rotate(-45deg);
-    top: 48px;
-}
-
-#toggle:checked + .checkbox {
-    background-color: #2E1C2B;
-    ;
-}
-
-#toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #4ffa76;
-    z-index: 1;
-}
-
-#toggle:checked ~ .menu-items {
-    visibility: visible;
-    opacity: 1;
 }
 
 /* CARDS */
 
-.container {
+.container section{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 3rem  0;
+    margin: 2rem  0;
 }
 
 .card-container {
@@ -499,7 +426,7 @@ dialog .close a{
     padding:  .4rem;
     width: 100%;
     background-color: #4A1942;
-    
+    margin-top: 3rem;
     
 }
 
@@ -518,12 +445,12 @@ dialog .close a{
 
 /* Responsive */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 40px;
         margin-top: 203px;
         letter-spacing: 4px;
-        
+        text-align: center;
     }
 
     h2 {
@@ -538,8 +465,8 @@ dialog .close a{
 
     .header-wrapper {
         height: 100vh;
-        background-color:#4ffa76;
-        padding: 1.5rem;
+        background-color:#4A1942;
+        padding: 2rem 1rem;
         position: relative;
         min-width: 320px;
         max-width: 576px;
@@ -548,27 +475,24 @@ dialog .close a{
     
     .background-wrapper  {
         height: 22vh;
+        width: 50%;
         background-color: transparent;
         background-image: url(./assets/img/ilustracao_nathalya.png);
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 1rem 0 1rem 0;
         position: relative;
         transform: scale(2);
-        margin-left: auto;
-        margin-right: 100px;
-        margin-top: -485px;
-        margin-bottom: -180px;
-        animation: backgroundTransition 6s ease-in-out infinite
+        padding: 0;
+        margin: auto;
+        margin-top: -513px;
+        animation: backgroundTransition 6s ease-in-out infinite;
     }
 
     .social-media-content {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         margin-top: 5.7rem;
     }
@@ -587,15 +511,66 @@ dialog .close a{
         transition: .5 cubic-bezier(0.55, 0.025, 0.675, 0.97);
     }
 
-    .container {
-        width: 90%;
+    /* MENU */
+
+    .menu {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .menu-items {
+        margin: auto;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-branding {
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 1rem;
+        background-image: url('./assets/img/logo.png');
+    }
+
+    .card-about, .card-skills, .card-projects,.card-surprise {
+        height: 720px;
+        margin-top: 0;
+    }
+
+    .nav-links {
+        background-color: #947de7;
+    }
+
+    .menu-items ul li a {
+        color: #ffffff;
+        background-color: transparent;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .container section{
+        width: 100%;
         height: auto;
         display: flex;
         align-content: space-between;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 2rem 1rem 2rem 1rem;
+        margin: 2rem 0rem 0rem .5rem
     }
     
     .card-container {
@@ -654,7 +629,7 @@ dialog .close a{
     }
     
     .card-wrapper h2{
-        font-size: 40px;
+        font-size: 2.3rem;
         text-transform: uppercase;
         letter-spacing: 4px;
         margin: 0;
@@ -789,16 +764,13 @@ dialog .close a{
         width: 100%;
     }
     
-
-    
-    
     /* FOOTER*/
     .footer {
         position: absolute;
         padding: 0.1rem;
         width: 100%;
         background-color: #4A1942;
-        
+        margin-top: 4rem;
         
     }
     
@@ -816,58 +788,5 @@ dialog .close a{
         padding: 0 .7rem 0 ;
     }
 }
-
-
-    
-
-    /* h1 {
-        font-size: 50px;
-        margin-top: 203px;
-        letter-spacing: 4px;
-    }
-
-    .header-wrapper {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: space-between;
-        padding: 0 28px;
-        position: relative;
-        
-    }
-
-    .background-wrapper {
-        height: 100vh;
-        
-        background-image: url('./assets/img/ilustracao_nathalya.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        
-        padding: 0 28px;
-        position: relative;
-        animation: backgroundTransition 6s ease-in-out infinite;
-    }
-    
-    .social-media a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 24px;
-        padding: .8rem 2.5rem;
-        border: 1px solid #ffffff;
-        box-shadow:  2px 9px 14px 0px rgba(13, 14, 14, 0.504);
-        min-width: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: .5 cubic-bezier(0.55, 0.025, 0.675, 0.97);
-    } */
-
-
-
-
-
 
 
