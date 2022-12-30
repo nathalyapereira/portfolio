@@ -475,7 +475,7 @@ dialog .close a{
     
     .background-wrapper  {
 	height: 15vh;
-	width: 50%;
+	width: 43%;
 	background-color: transparent;
 	background-image: url(./assets/img/ilustracao_nathalya.png);
 	background-repeat: no-repeat;
@@ -486,7 +486,7 @@ dialog .close a{
 	padding: 0;
 	margin: auto;
 	margin-top: -393px;
-	animation: backgroundTransition 6s ease-in-out infinite;
+	animation: backgroundTransition 0 ease-in-out infinite;
     }
 
     .social-media-content {
