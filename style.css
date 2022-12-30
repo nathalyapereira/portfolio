@@ -563,7 +563,7 @@ dialog .close a{
         font-weight: bold;
     }
     .container section{
-        width: 100%;
+        width: 96%;
         height: auto;
         display: flex;
         align-content: space-between;
@@ -575,9 +575,11 @@ dialog .close a{
     
     .card-container {
         display: grid;
-        grid-template-columns: 21rem;
-        justify-content: space-evenly;
-         width: 90%;
+	grid-template-columns: 21rem;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	justify-items: center;
     }
     
     .card {
