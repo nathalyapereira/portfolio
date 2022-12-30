@@ -482,7 +482,7 @@ dialog .close a{
 	background-size: contain;
 	display: flex;
 	position: relative;
-	transform: scale(2);
+	transform: scale(2.2);
 	padding: 0;
 	margin: auto;
 	margin-top: -393px;
