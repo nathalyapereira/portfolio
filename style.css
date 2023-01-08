@@ -108,6 +108,7 @@ h2 {
 .menu {
     width: 100%;
     margin: auto;
+    margin-bottom: 10%;
 }
 
 .menu-items {
