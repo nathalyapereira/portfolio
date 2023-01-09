@@ -724,7 +724,7 @@ dialog .close a{
         visibility: visible;
     }
 
-    dialog {
+    .dialog {
         width: 90%;
         height: 100vh;
         background-color: #ffffff;
