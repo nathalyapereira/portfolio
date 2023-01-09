@@ -313,9 +313,14 @@ h2 {
     text-decoration: none;
     color: #000000;
     background-color: transparent;
+    margin: auto;
     text-decoration: none;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 }
+
 .projects .projects-container {
     display: flex;
     font-size: 24px;
