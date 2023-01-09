@@ -694,6 +694,15 @@ dialog .close a{
         width: 90%;
         
     }
+	
+	dialog .close a {
+    	text-decoration: none;
+    	min-width: 4rem;
+    	color: rgb(116 41 104);
+    	font-size: 40px;
+    	padding-left: 1.6rem;
+    	margin-right: 0rem;
+	}
 
     .tooltip{
         position: relative;
@@ -702,7 +711,7 @@ dialog .close a{
     
     .tooltip .tooltiptext {
         visibility: hidden;
-        width: 92px;
+        width: 72px;
         background-color: #4a19420f;
         color: #947de7;
         text-align: center;
@@ -712,8 +721,9 @@ dialog .close a{
         /* Position */
         position: absolute;
         z-index: 1;
-        top: 1px;
-        left: 97%;
+    	top: 1px;
+    	left: 59%;
+}
     }
     
     .tooltip:hover .tooltiptext {
