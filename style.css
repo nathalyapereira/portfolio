@@ -689,17 +689,6 @@ dialog .close a{
         
     }
 	
-    dialog {
-        width: 90%;
-        height: 100vh;
-        background-color: #ffffff;
-        background-size: 400% 400%;
-        padding: 0.4rem 1.3rem 0.7rem 1.3rem;
-        position: relative;
-        border-radius: 2rem;
-        border: 1rem solid #947de7;
-    }
-	
      dialog .close a {
     	text-decoration: none;
     	min-width: 4rem;
