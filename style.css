@@ -262,8 +262,6 @@ h2 {
     font-size: 15px;
 }
 
-
-
 .skills {
     text-align: center;
     display: flex;
@@ -311,7 +309,6 @@ h2 {
     align-items: center;
     position: relative;
 }
-
 .projects .projects-container a {
     text-decoration: none;
     color: #000000;
@@ -319,7 +316,6 @@ h2 {
     text-decoration: none;
     
 }
-
 .projects .projects-container {
     display: flex;
     font-size: 24px;
@@ -330,7 +326,6 @@ h2 {
     align-items: center;
     flex-direction: column;
 }
-
 .projects img{
     text-align: center;
     display: flex;
@@ -340,7 +335,6 @@ h2 {
     position: relative;
     width: 90%;
 }
-
 
 .modal-wrapper {
     display: flex;
