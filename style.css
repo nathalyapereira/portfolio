@@ -270,26 +270,27 @@ h2 {
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .skills .skills-container {
     display: flex;
     font-size: 24px;
     font-weight: bold;
-    line-height: 7px;
-    margin-top: 1rem;
+    line-height: 5px;
+    margin: 0.8rem;
     transition: transform .35s;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .skills .skills-container:hover {
     color: #7a176a;
     border: 1px solid #7a176a;
-    padding: 20px 40px 20px 40px;
+    padding: 16px 32px 16px 32px;
     background-color: #ffffff;
     transform: scale(1.1);
 	padding: .4rem;
